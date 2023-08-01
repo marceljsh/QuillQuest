@@ -11,7 +11,6 @@ export default function Navbar() {
               <span className="text-teal-500 font-bold">Quill</span>quest
             </h1>
           </Link>
-
           <ThemeButton />
         </div>
       </div>

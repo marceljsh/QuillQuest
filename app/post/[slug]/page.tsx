@@ -1,9 +1,8 @@
-"use client";
-
 import { Post } from "@/app/lib/interface";
 import { client } from "@/app/lib/sanity";
 import { urlFor } from "@/app/lib/sanityImageUrl";
 import { PortableText } from "@portabletext/react";
+import moment from "moment";
 import Image from "next/image";
 
 async function getData(slug: string) {
@@ -25,7 +24,7 @@ export default async function SlugPage({
         <Image
           src={urlFor(value).url()}
           alt="Image"
-          className="rounded-lg"
+          className="rounded-lg mx-auto"
           width={800}
           height={800}
         />
@@ -40,7 +39,7 @@ export default async function SlugPage({
           <div className="space-y-10">
             <div>
               <p className="text-base font-medium leading-6 text-teal-500">
-                {new Date(data._createdAt).toISOString().split("T")[0]}
+                {moment(new Date(data._createdAt).toISOString()).fromNow()}
               </p>
             </div>
           </div>
