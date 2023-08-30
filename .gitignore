@@ -16,8 +16,6 @@ yarn.lock
 .env.development.local
 .env.test.local
 .env.production.local
-*.js
-*.js.map
 .vscode/
 .idea/
 *.log
