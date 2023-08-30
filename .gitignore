@@ -25,3 +25,4 @@ yarn.lock
 /sanity/node_modules/
 /sanity/dist/
 /sanity/schemas/__generated__/
+README.md
